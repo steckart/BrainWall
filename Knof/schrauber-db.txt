@@ -1,0 +1,14 @@
+datenbank für schrauber
+
+name des schraubers
+arbeiten des schraubers mit fotos und beschreibungen
+bewertungen der kletterer für routen des schraubers (-> schnittpunkt zur bewertung der routen)
+kontaktdaten des schraubers
+
+datenbank für routen
+
+startschwierigkeitseinschätzung durch schrauber -> schwierigkeitsgrad durch bewertungen der nutzer
+name des schraubers
+bewertungen durch kletterer
+art der route
+
