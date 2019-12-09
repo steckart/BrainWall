@@ -1,0 +1,26 @@
+Funktion: Bewertungsmaßstab für Boulderhallen-/routen
+Rollen: 
+1.Schrauber
+2. Boulderer
+3. Chef sucht Routensetzer(Kriterien: statische Routen vs. Längenvorteil(Ape Index)
+
+Ist-Zustand:
+Schwierigkeitsgrad nach Farben/Sterne-Skala? In Hallen gegeben
+
+Soll-Zustand:
+1.	DB über vorhandene Kletterrouten und Bewertung (Fotos/Video?)
+QR-Code
+
+2.	Einspeisung neuer Routen und Bewertung / Rechtevergabe
+3.	Suche/Finde Funktion für Bau/Routensetzer
+
+
+Responsiv/Bewertung von Routen durch (1)Routensetzern, (2)Kletterer
+Informationsbeschaffung für  Anfänger/Fortgeschrittene über Routen
+Anpassung nach Kriterien: 1. Affenindex
+			     2. Erfahrung (Besuche/Dauer)
+
+Kommentarfunktion
+
+
+
