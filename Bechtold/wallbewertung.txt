@@ -1,0 +1,52 @@
+-(a)Routenschrauber
+-(b)Hallenbetreiber
+-(c)Boulder
+
+(a)... stellt Route mit Foto ein und gibt Ranking vor
+(b)... nimmt Route und Ranking ab
+(c)... füttert Ranking
+
+erst nach freigabe durch Komission (a+b) wird Route freigegeben.
+
+Bewertungssystem:
+
+User:
+(müssen selbst bewertet werden um aussagekräftige Bewertung abzugeben(siehe Faktoren))
+
+-Ranking/Sterne(******)
+
+		*=leicht(1)
+		**=mittelleicht(2)
+		***=mittel(3)
+		usw.
+
+
+	Faktoren: 
+		-Affenindex/Körpergröße
+		-Erfahrung
+		-Klettergrad
+
+Route:
+
+-Ranking/Sterne(******)
+		
+		*=leicht(1)
+		**=mittelleicht(2)
+		***=mittel(3)
+		usw.
+
+-Farben(grün,hellblau,blau,gelb,hellrot,rot)
+	
+		
+
+Benötigt:
+
+-Datenbank
+		-Schrauber
+		-Betreiber
+		-Boulder
+		-Route
+
+-Affenindex
+-UI
+-QR-Anwendung
