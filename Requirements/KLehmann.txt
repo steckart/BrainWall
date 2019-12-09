@@ -1,0 +1,72 @@
+Anforderungsanalyse:
+
+Datenbank
+- Halle - Sektoren
+- Hallenchef - Routenbauer - Kletterer ( User )
+- Bewertungen
+- Routen ( + Bilder / Video )
+
+Profil
+- Name
+- Alter
+- Größe
+- (Körperbau)
+- Affen-Index
+- klettert seit
+- bouldert seit
+- setzt Routen seit
+- Regelmäßigkeit / pro Woche / Monat / Jahr 
+- Indoor / Outdoor
+- Klettern / Bouldern
+
+- alle Routen eines Setzer / Users anzeigen
+	- vergangene / aktuelle
+
+Profilbewertung / -status
+- Bouldernewbe
+- Bouldermaster
+- Boulderguru
+
+- Routennewbe
+- Routenmaster
+- Routenguru
+
+Routenprofil
+- Schrauber
+- Zeitraum
+- Schwierigkeitsgrad ( Sterne, Farben, FontainBleu )
+- Beliebtheit ( Anzahl der Bewertungen - Like / Dislike )
+- Kraft & Ausdauer -> Schieberegler ? Zahlenmaßstab: 1-3? 1-5? 1-10?
+- Typ: Traverse(Quergang), andere Typen???
+- Foto (mit Griffmarkierung ?)
+- Video (Vorbouldern, Hinweise, Erklärungen)
+- Vorschläge und Links zu ähnlichen Routen (in der Nähe: gleiche/andere Halle, gleicher/anderer Sektor)
+	- ähnliche Routen
+	- vom gleichen Routenbauer
+	- User denen diese Route gefallen hat, gefielen auch..
+
+Routenkategorie / -status
+- Testroute ( erst nach mindestens 10 Bewertung -> FreeForAll-Status )
+- FreeForAll / Aktiv
+- Beendet / Geschlossen / Abgeschraubt
+
+Bewertungsfunktion
+- Sterne / SountainBleu-Skala
+- zu schwer / zu leicht / perfekt
+- Textform: Hinweise, Lob, Kritik
+
+Suche-Finde Funktion
+- Filter + Sortierung nach Kriterium x
+
+Karriere / Job / Angebots-Portal
+- Hallenchef sucht Routenbauer 
+
+---------------------------------------------------------------
+
+Sonderfeatures & Funktionen
+- Wettberwebe / Contest
+- Spiele
+- Lernportal ( Workshops / Kurse auch vor Ort )
+- Kletterbuddies ( ähnliche Kletterer / Schwierigkeitsgrad / Hallenbesuche / Tageszeiten )
+- Klettetermatch / Date / Terminkalender
+- Trainingspläne erstellen & teilen
