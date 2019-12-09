@@ -1,0 +1,23 @@
+3.	Produktfunktionen
+Leistungsfähige Nutzer application um Menschen zu verbinden die sich aus verschiedenen gründen für ein Themengebiet entschieden haben um den Informationsfluss zwischen diesen Menschen zu gewährleisten ist diese App Forum durch folgende Funktionen.
+Pokedex 101 hat 4 wesentliche Funktionen welche das Login und die Registrieung  das Suchen und Ausloggen und die Administrieren betreffen.
+
+Programmablaufplan 
+
+Im wesentlichen ist der Login Prozess sehr einfach der Benutzer muss sich mit seinem Namen und seinem Passwort einloggen. Im Hintergrund erfolgt ein Abgleich mit den Nutzerdaten auf der Datenbank um die Autorisierung zu ermöglichen.
+Wenn allerdings kein Benutzer in der Datenbank vorhanden  ist muss eine Registrierung erfolgen
+wofür es die seperate funktion der Restgistrierung gibt.
+Bei der Regstrierung muss der Benutzer folgende Daten angeben:
+-Vorname
+-Nachname
+-Benutzerdaten
+-E-Mail
+-Enter Password
+-Repeat Password
+Nach dem Login hat ein normaler Benutzer die möglichkeiten durch den Pokedex zu Brwosen entweder er lässt sich alle einträge über den Kalatog anzeigen und wählt dort den aus und sucht dort über das Pokemon er mehr information haben möchte
+Hat er aus der liste(entweder Suchergebnisliste oder dem katalog) den gewünschten eintrag gewählt wird ihm die inhaltsseite des Pokemon angezeigt, im  anschluss kann sich ein normaler user einfach auslogen.
+Für Aministratoren der Platform gibt es darüber hiaus noch weitere optionen er kann neue einträge anlegen bestehende einträge überarbeiten oder einträge löschen in der benutzerverwaltung sind administratoren in der lage bestehenden benutzern administrative rechte zu erteilen.
+Benutzer zu ändern oder zu löschen.
+
+
+
