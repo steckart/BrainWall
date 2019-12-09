@@ -1,0 +1,98 @@
+
+Bloc-Eval
+
+Die Kletter- bzw. Boulderrouten Bewertung!
+
+
+Ausgangssituation:
+
+Der Klettersport und Bouldersport in Deutschland findet immer mehr Anhänger.
+Um der wachsenden Nachfrage, besonders im urbanen Raum, Rechnung zu tragen 
+entstehen immer neue Indoor-Kletteranlagen bzw. Boulderhallen.
+Dort werden künstliche Kletterrouten durch die so genannten Routensetzer angelegt.
+
+Damit der Kletterer einschätzen kann, wie schwierig die einzelne Route ist, 
+wird sie bewertet. Bewerten heißt in diesem Fall, dass die Route einem bestimmten
+Grad aus einer der Kletterskalen zugeordnet wird.
+
+Diese Zuordnung erfolgt durch den Schrauber bzw. durch eine Kommission (mehrere Schrauber).
+Der vergebene Grad wird bei einigen Routen im Nachhinein auch geändert.
+Ein Grund dafür kann sein, dass viele Kletterer einen anderen Schwierigkeitsgrad vergeben würden.
+Der Routensetzer (Schrauber) bzw. die Kommission bekommen die Einschätzungen der 
+anderen Kletterer nur dann, wenn sie selbst vor Ort sind und sich mit den Kletterern
+unterhalten. Das wiederum bedeutet, dass nur sehr eingeschränkte Meinungen und 
+Einschätzungen den Routensetzer erreichen.
+
+
+Wunsch
+
+Eine Möglichkeit, die es jedem Kletterer ermöglicht Routen zu bewerten bzw. seine
+Einschätzung abzugeben. Der Routensetzer kann mehr Feedback einholen und diese
+Infos für die Verbesserung seiner Routen verwenden.
+Andere Kletterer können sich die Bewertung bestimmter aktueller Routen ansehen 
+und z.B. ihren Trainingsplan entsprechend anpassen.
+
+
+Soll-Konzept
+
+Eine Webapplikation (responsive (Smartphone)) soll entstehen, die es dem Kletterer
+ermöglicht einzelne Routen in Kletterhallen zu bewerten. Die erhaltenen Daten sind
+in einer Datenbank für Auswertungen persistent zu speichern. 
+Wunsch (die Route kann über einen QR-Code identifiziert werden).
+ 
+
+
+
+
+User Story's
+
+Susanne Schrauber (Routensetzerin):
+ 
+Sie stellt ihre gestern im Ostbloc geschraubten Routen im Portal ein.
+Dafür lädt sie jeweils ein Bild hoch und gibt ihre eigene Bewertung (Schwierigkeitsgrad) 
+ab und ordnet die Routen noch den jeweiligen Ostbloc-Sektoren zu.
+Danach stellt sie diese Routen den Kletterern zur Verfügung.
+Mehrere Kletterer bewerten ihre Routen. Dabei stellt sich heraus, das die 4 Sterne-Route
+doch für die meisten 4 Sterne Kletterer kaum zu lösen ist. 
+Susanne Schrauber ändert den Schwierigkeitsgrad ihrer Route auf 5 Sterne und nimmt die
+Bemerkungen der Kletterer zur Kenntnis und speichert sich die wichtigsten Infos.
+Bei der nächsten Route dieses Schwierigkeitsgrades entschärft sie bestimmte Stellen.
+
+
+Karl Klimmzug (Kletterer)
+
+Karl geht in den Ostbloc um 4 Sterne Routen zu klettern und findet genau die Route von 
+Susanne Schrauber (er weiß es aber nicht :o). Er geht an die Wand klettert die Route
+bis zum vorletzten Griff, weiß dann nicht weiter und springt ab.
+Danach nimmt er sein Smartphone und scannt den QR-Code der Route und kommt auf die 
+Bewertungsapp. 
+Er hat sie vor zwei Wochen runtergeladen und gleich sein Profil vervollständigt.
+Nun bewertet er die Route als zu schwierig für 4 Sterne und gibt noch Feedback in Textform ab.
+
+
+Stefanie Spinnebein (Kletterin)
+
+Stefanie geht zwei Tag nach Karl in den Ostbloc um 4 Sterne Routen zu klettern. Eine der 
+Routen ist jetzt allerdings zu einer 5 Sterne Route umbewertet worden und damit nicht mit
+auf ihrem Trainingsplan. Alles läuft super, sie hat genau den richtigen Level gewählt.
+Nächste Woche probiert sie 5 Sterne Routen aus.
+
+
+Christian Chef (Kletterhallen-Besitzer und quasi Schrauber-Chef)
+
+Christians Lieblings-Routensetzer ist für zwei Monate nach Rio verschwunden. Er braucht also
+Ersatz. Christian hat von der Bewertungsapp gehört und sieht sich nach einem 
+Routensetzer um. Er möchte jemanden haben, der eher statisch zu kletternde Routen baut
+und wenig auf Längenvorteile setzt. Er gibt seine Kriterien ein und findet prompt Susanne
+Schrauber. Nachdem er sich einige ihrer Routen auf den Bildern angesehen hat, ruft er sie an...
+
+
+
+
+
+
+
+
+
+
+
