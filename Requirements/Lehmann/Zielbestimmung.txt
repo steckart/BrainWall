@@ -1,0 +1,33 @@
+_Welche Ziele sollen durch den Einsatz der Software erreicht werden?_
+
+Dem einzelnen Benutzer soll der Austausch und die Bewertung anderer Hallen, Nutzer und Routen
+über einen Internetdienst ermöglicht werden. Folgende Rollen sollen dem Nutzer zur Verfügung stehen:
+
+- Administrator
+- Hallenbetreiber
+- Routensetzer / -schrauber
+- Nutzer / Boulderer / Kletterer
+
+Alle Benutzer bedienen den Internetdienst intuitiv, einfach und komfortabel über einen Webbrowser.
+Durch eigenständiges Registrieren, legt jeder Benutzer seine Kennung selbst fest.
+Diese Kennung dient dem Nutzer um sich jederzeit anzumelden.
+
+Ein angemeldeter Benutzer kann:
+
+- aktuelle und vergangene Routen ansehen und nach Suchkriterien sortieren,
+- das Profil anderer Nutzer und Routensetzer betrachten und deren Routen einsehen,
+- eigene Routen (als Routensetzer) erstellen und veröffentlichen,
+- andere Hallen, Nutzer und Routen bewerten und Kommentare zu schreiben.
+
+Jedes einzelne Nutzer- und Routenprofil ist _öffentlich_ einsehbar.
+
+Die persönlichen Daten kann jeder einzelne Nutzer geheim halten oder 
+(innerhalb des Internetdienstes) öffentlich machen.
+
+Zur Motivation erhält jeder Nutzer, durch häufiges bewerten oder einstellen eigener Routen,
+einen Nutzerstatus, der Auskunft über seine Aktivität und Erfahrungslevel (Zuverlässigkeit der Angaben) gibt.
+
+Zudem gibt es besondere Auszeichnungen/Orden für besonders beliebte Hallen, Routen, Routensetzer und Nutzer
+um eine weitere Motivation und leichte Erkennbarkeit von Beliebtheit zu ermöglichen.
+
+ 
