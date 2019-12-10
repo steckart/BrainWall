@@ -1,0 +1,163 @@
+Produktfunktionsseite
+Funktionalitäten
+Rollen – Admin, Setzer, Besitzer, Kletterer
+
+
+ 
+3 Produktfunktionen
+Was sind die Hauptfunktionen des Produktes aus der Sicht des Auftraggebers?
+3.1 Benutzerfunktionen
+
+Kletterer:
+1.	Bewerten von Kletter bzw. Boulder-Routen.
+1.1 Route mittels QR-Code identifizieren 
+1.2 Anpassen der Bewertung
+1.3 Anzeigen in verschiedenen Skalen 
+2. Bewerten bzw. Einordnen von Kletterern bzw. Boulderern.
+2.1. Bewerten der Nutzer
+
+
+12 geplante Routen anzeigen … 
+13  Routen mit bestimmten Kriteriean wünschen 
+14  Gruppenfunktionalität 
+15 App-Feedback geben 
+16  Statistik
+16.1. Report über Routen (Benutzungsfrequenz, Beliebtheit...)
+
+
+Besitzer:
+
+18. Jobs
+19 Optional? Sonderfunktionen: Contest, Workshops, Termine…
+12. geplante Routen einstellen
+
+
+
+3.1.1 An{ und Abmelden
+
+9.Einloggen
+10.Registrieren
+
+Der Benutzer kann das System erst nutzen, wenn er registriert und angemeldet ist.
+/LF0010/ Ein beliebiger Internet{Benutzer kann sich registrieren unter Angabe
+_ seines gewunschten Benutzernamens,
+_ seines gewunschten Passwortes,
+_ seiner eigenen E{Mail{Addresse und
+_ seiner personlichen Daten (optional).
+Erst dann wird er zum Benutzer des Systems. Das System steht ihm ohne Einschr
+ankung zur kostenlosen Verfugung bereit. Diesen kostenlosen Benutzer{Account
+kann man nicht kundigen.
+/LF0020/ Ein Benutzer kann sich am System anmelden unter Angabe
+_ seines Benutzernamens und
+_ seines Passwortes.
+/LF0030/ Der angemeldete Benutzer kann sich jederzeit vom System abmelden.
+/LF0040/ Falls ein Benutzer seine Kennung oder sein Passwort vergessen haben sollte,
+so kann er unter Angabe
+_ seines Benutzernamens oder
+_ seiner E{Mail{Addresse
+seine vollstandige Kennung anfordern, die ihm automatisch an seine E{Mail{Addresse
+vom System gesendet wird.
+
+5. Nutzerprofil
+5.1. CRUD Create, Retrieve, Update, Delete 5.2. mit Bild, Affenindex, Klettergrad …, Kommentarhistorie
+
+
+
+
+3.1.2 Personliche Daten
+Ein Benutzer verfugt uber Informationen, wie seine Addresse, seine Hobbys, ein Foto, ein
+Begru_ungstext, eine Homepage usw. Dies sind seine personlichen Daten, die er frei gestalten
+kann.
+/LF0110/ Der angemeldete Benutzer kann sich jederzeit seine personlichen Daten vom
+System anzeigen lassen.
+5
+Beispiel: Lastenheft Brettspiele 3 PRODUKTFUNKTIONEN
+/LF0120/ Der angemeldete Benutzer kann bis auf seinen Benutzernamen alle seine personlichen
+Daten aktualisieren bzw. abandern.
+/LF0130/ Der angemeldete Benutzer kann jede einzelne Eigenschaft seiner personlichen
+Daten fur die Spielgemeinschaft sichtbar bzw. unsichtbar machen.
+
+ 
+3.1.3 Personliche Kon_guration
+Die Nutzungsumgebung eines Benutzers ist das Layout, das Design, aber auch diverse logische
+Einstellungen, die die individuelle Handhabung des Systems vereinfachen konnen.
+/LF0210/ Der angemeldete Benutzer kann sich jeder Zeit seine personliche Kon_guration
+seiner Nutzungsumgebung anzeigen lassen.
+/LF0220/ Der angemeldete Benutzer kann seine personliche Kon_guration individuell abandern.
+/LF0230/ Der angemeldete Benutzer kann seine aktuelle personliche Kon_guration zur
+spateren Verwendung in seine personliche Datenbank abspeichern.
+/LF0240/ Der angemeldete Benutzer kann bereits abgespeicherte personliche Kon_gurationen
+loschen.
+/LF0250/ Der angemeldete Benutzer kann
+
+
+
+3.1.4 Personliches Pro_l
+
+
+// Trainingsplan
+8.Trainingsplan erstellen
+20.Routensetzer folgen (Nachricht, wenn neue Route, wo überall Routen...)
+
+Zum personlichen Pro_l zahlen die Wertungen (aktuelle Spielstarke) sowie die Anzahl der
+gespielten, gewonnenen, verlorenen und unentschiedenen Spiele, die Anzahl der getatigten
+Zuge, die Anzahl der aktuell gespielten Spiele, das Datum des zuletztgespielten Zuges, das
+Anwesenheitsprotokoll, die Hau_gkeit des Erscheinens (Treue), usw. Das personliche Pro_l
+kann man nicht direkt abandern, sondern nur die Sichtbarkeit der einzelnen Eigenschaften.
+Das personliche Pro_l wird nach dem Beenden einer Partie vom System automatisch
+aktualisiert.
+/LF0310/ Der angemeldete Benutzer kann sich jederzeit sein personliches Pro_l vom System
+anzeigen lassen.
+/LF0320/ Der angemeldete Benutzer kann jede einzelne Eigenschaft seines personlichen
+Pro_ls fur die Spielgemeinschaft sichtbar bzw. unsichtbar machen. Die Wertungen
+der jeweiligen Spieltypen bleiben jedoch immer o_entlich sichtbar.
+ 
+3.1.6 Kommunikation
+
+Email funktion an die Hallen/schrauber
+3.1.6.1. 
+Routensetzer folgen (Nachricht, wenn neue Route, wo überall Routen...)
+
+
+3.1.7 Suche: 
+Suchen nach Boulderrouten
+7.1. anhand von Kriterien wie z.B. Schwierigkeit, Zeitraum, Routensetzer
+7.2. mit "Adresse" (Sektor, Name, Halle ...) 
+7.3. Boulderrouten folgen (Updates, ist weg ...)
+11. Suche nach Boulderhallen (das machen schon andere)
+Routensetzer suchen (nach best. Kriterien)
+ 
+3.2 Administratorfunktionen
+
+2.	Freigeben von Routen
+
+21. Rolle wechseln (z.B. von Boulderer zu Routensetzer)
+
+Der Administrator ist ein Benutzer wie jeder andere, ist aber fur den geregelten Ablauf des
+Systems verantwortlich. Er kann die Eigenschaften des Systems andern bzw. kon_gurieren.
+Er kann Benutzer, die sich danebenbenehmen, mit zeitlich befristeten Einschrankungen ihrer
+Fahigkeiten im System bestrafen. Das Loschen von Benutzern ist jedoch nicht moglich. Der
+Administrator kann den Kontakt (Instant{Messaging) zweier Benutzer im System unterbinden.
+3.2.1 Systemverwaltung
+/LF1010/ Der angemeldete Administrator kann das System kon_gurieren.
+/LF1020/ Der angemeldete Administrator kann Statistiken zur Benutzung des Systems
+anzeigen lassen.
+3.2.2 Benutzerverwaltung
+/LF1110/ Der angemeldete Administrator kann die Eigenschaften einzelner Benutzer unter
+Angabe einer zeitlichen Begrenzung einschranken.
+/LF1120/ Der angemeldete Administrator kann die Eigenschaften einzelner Benutzer auch
+wieder manuell restaurieren.
+/LF1130/ Der angemeldete Administrator kann die Moglichkeit zum Nachrichtenaustausch
+zweier Benutzer unterbinden.
+/LF1140/ Der angemeldete Administrator kann jeglichen Kontakt zwischen zwei Benutzern
+unterbinden, wobei bereits ero_nete Spiele zu Ende gespielt werden mussen.
+
+
+
+
+3.3 Schrauberfunktion
+
+4. Einstellen (Posten, Hochladen) von Routen.
+4.1 mit Bilder, Videos, Multimedia
+4.2 mit Kommentaren
+4.3 Routenprofil
