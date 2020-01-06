@@ -1,0 +1,41 @@
+
+#container {
+	background-color: white;
+	width: 30%;
+	margin: 5% auto 5% auto;
+	padding: 2%;
+}
+
+.registerbtn, .loginbtn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+	
+}
+.input-field {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+}
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+.icon {
+  padding: 8px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.spantext {
+	margin: 15px 20px 0px 0px;
+}

@@ -1,0 +1,187 @@
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f3f3f3;
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+.divMain {
+  height: 100%;
+}
+textarea {
+	width: 100%;
+	resize: none;
+	box-sizing: border-box;
+	background-color: #eeeeee;
+	margin: 0;
+}
+#titel {
+	background-color: #eeeeee;
+}
+
+/* //--------------------------Home-------------------------- */
+.ulHome {
+	
+	padding: 25px;
+}
+
+.divMainContent {
+	background-color: white;
+	margin: 0% 18% 2% 18%;
+  padding: 2%;
+  box-sizing: border-box;
+	box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 20px 20px rgba(0, 0, 0, 0.05);
+}
+.divContent {
+	border-bottom: 1px solid lightgrey;
+	padding: 0;
+	display: flex;
+	margin: 3%;
+}
+.column {
+	border: 3px solid lightgrey;
+}
+.cont {
+	margin: 0;
+	padding: 0px 0px 0px 5px;
+	}
+#h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+}
+.imcon {
+	width: 80px;
+	height: 80px;
+}
+/* //--------------------------Profil-------------------------- */
+.proftext {
+	background-color: #eeeeee;
+}
+
+#profimg {
+	width: 30%;
+	height: 30%;
+}
+
+/* //-----------------------Forum----------------------- */
+.divDb {
+	box-sizing: border-box;
+	box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 20px 20px rgba(0, 0, 0, 0.01);
+	margin: 0% 3%;
+}
+
+.divMainThread  {
+	background-color: white;
+	margin: 1% 18% 2% 18%;
+  padding: 2%;
+  box-sizing: border-box;
+	box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+#aEntry {
+	text-decoration: none;
+	font-size: 16px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* //--------------------------Thread-------------------------- */
+.accordion {
+  background-color: #eee;
+	color: #444;
+	font-size: 16px;
+  cursor: pointer;
+  padding: 18px;
+	border: none;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+	box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, ), 0px 6px 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+/**-------------------------Post-----------------------------*/
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+	overflow: hidden;	
+	border: 1px solid lightgrey;
+} 
+.pPost {
+	font-size: 12px;
+}
+.pdate {
+	font-size: 10px;
+}
+.singlepanel {}
+.postborder {
+	border: 1px solid black;
+	padding: 15px;
+}
+.posttext {
+	padding: 10px;
+	border: 1px solid lightgrey;
+	background-color: #eeeeee;
+}
+/* ----------------------------Aside------------------------------------- */
+
+.ulAside {
+	margin: 0;
+	padding: 0;
+  list-style-type: none;
+}
+.asideLeft {
+	width: 15%;
+	float: left;
+	margin: 0% 0% 10% 1%;
+	padding: 1%;
+	background-color: white;
+	box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.asideRight {
+	width: 15%;
+	float: right;
+	margin: 0% 1% 0% 0%;
+	padding: 1%;
+	background-color: white;
+	box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 20px 20px rgba(0, 0, 0, 0.02);
+}
+
+.col-1 {
+	border: 1px solid lightgrey;
+	text-align: center;
+}
+.col-2 {
+	border: 1px solid lightgrey;
+	text-align: center;
+	padding: 5%;
+}
+.headAside {
+	margin: 0;
+}
+.pAside {
+	border-bottom: 1px solid black;
+	
+}
+
+/* ------------------------------------LOGINORREGISTER-------------------------------- */
+.divLogOrReg {
+	border: 1px solid lightgrey;
+	width: 30%;
+	margin: 0% 35%;
+	padding: 2%;
+	text-align: center;
+}
