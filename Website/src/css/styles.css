@@ -75,6 +75,7 @@
 		right: 				0;
 		position: 			absolute;
 		top: 				0;
+		padding-bottom: 	0.95rem !important;
 	}
 	#aregister {
 		margin-right:		7rem;
@@ -101,8 +102,7 @@
 	#topnav > ul > li > a {
 		color: 				#FFF;
 		text-decoration: 	none;
-		padding: 			1rem;
-		top: 				0;
+		padding: 			1.05rem;
 	}
 	#topnav > ul > li > a:link {
 		color: 				#FFF;
@@ -138,14 +138,14 @@
 	#footernav > ul > li > a {
 		color: 				#FFF;
 		text-decoration: 	none;
-		padding: 			1rem;
+		padding: 			1.05rem;
 	}
 	#footernav > ul > li > a:link {
 		color: 				#FFF;
 	}
 	#footernav > ul > li > a:hover {
 		background-color: 	#E5E5E5;
-		padding: 			1rem;
+		padding: 			1.05rem;
 		margin: 			0;
 		color:				#3D3F45;
 	}
