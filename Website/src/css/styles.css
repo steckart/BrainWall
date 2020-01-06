@@ -1,0 +1,197 @@
+/* === COLORS ======================================================================= */
+/*
+	modal Black w/ opacity	rgba(0,0,0,0.4)
+	
+	Black					#FFF
+	White					#000
+	
+	.loginbtn green			#4CAF50
+	.cancelbtn red			#f44336
+	
+	Dark Grey				#3D3F45
+	Light Grey				#E5E5E5
+	
+	Red						red
+	Blue					dodgerblue	
+*/
+
+/* === HTML-TAGS ======================================================================= */
+
+	* {
+		box-sizing: 		border-box;
+	}
+	
+	body {
+		margin: 			0px;
+		font-family: 		'Helvetica Neue', 'Arial', sans-serif;
+		font-size: 			16px;
+	}
+
+	h2 {
+		text-align: 		center;
+	}
+	
+
+/* === SINGLE ID'S AND CLASSES ======================================================================= */
+	
+	.active {
+		background-color: 	#E5E5E5;
+		height: 			100%;
+		padding: 			1rem;
+		top: 				0;
+	}
+	.active {
+		color:				#3D3F45 !important;
+	}
+	
+	.main {
+		text-align: 		left;
+		z-index:			0;
+		width: 				50%;
+		margin: 			3% auto;
+		border:				2px solid #3D3F45;
+	}
+	.main > h2 {
+		text-align: 		center;
+		padding-left: 		.5rem;
+	}
+	.main > p {
+		text-align: 		left;
+		padding-left: 		.5rem;
+	}
+	
+	#index-main {
+		margin-top:			5rem;
+		text-align:			center;
+		z-index:			0;
+	}
+	
+	#index-main table {
+		margin: 			0 auto 0 auto;
+	}
+
+	
+	.right {
+		right: 				0;
+		position: 			absolute;
+		top: 				0;
+	}
+	#aregister {
+		margin-right:		7rem;
+	}
+
+
+/* === TOP-NAVIGATION ======================================================================= */
+
+	#topnav {
+		z-index: 			10;
+		left: 				0;
+		top: 				0;
+		position: 			fixed; /* important for z-index */
+		background-color: 	#3D3F45;
+		width: 				100%;
+	}
+
+	#topnav > ul {
+		display: 			flex;
+		list-style-type:	none;
+		padding-left: 		0;
+	}
+
+	#topnav > ul > li {
+		margin-left: 		.5rem;
+	}
+	
+	#topnav > ul > li > a {
+		color: 				#FFF;
+		text-decoration: 	none;
+		padding: 			1rem;
+	}
+	#topnav > ul > li > a:link {
+		color: 				#FFF;
+	}
+	#topnav > ul > li > a:hover {
+		background-color: 	#E5E5E5;
+		/* padding: 			1rem; */
+		/* margin: 			0; */
+		color:				#3D3F45;
+	}
+	#topnav > ul > li > a:active {
+		background-color: 	#E5E5E5;
+	}
+
+	
+/* === FOOTER-NAVIGATION ======================================================================= */
+
+	#footernav {
+		z-index: 			10;
+		left: 				0;
+		bottom: 			0;
+		position: 			fixed; /* important for z-index */
+		background-color: 	#3D3F45;
+		width: 				100%;
+	}
+
+	#footernav > ul {
+		display: 			flex;
+		list-style-type:	none;
+		padding-left: 		0;
+	}
+
+	#footernav > ul > li {
+		margin-left: 		.5rem;
+	}
+	
+	#footernav > ul > li > a {
+		color: 				#FFF;
+		text-decoration: 	none;
+		padding: 			1rem;
+	}
+	#footernav > ul > li > a:link {
+		color: 				#FFF;
+	}
+	#footernav > ul > li > a:hover {
+		background-color: 	#E5E5E5;
+		padding: 			1rem;
+		margin: 			0;
+		color:				#3D3F45;
+	}
+	#footernav > ul > li > a:active {
+		background-color: 	#E5E5E5;
+	}
+
+
+
+/* === MEDIA-QUERY over VIEWPORT ======================================================================= */
+
+	@media screen and (max-width: 1124px) {
+		.main {
+			width:				95%;
+			margin-top:			2.5rem;
+			margin-bottom:		4rem;			
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		.main {
+			width:				95%;
+			margin-top:			2.5rem;
+			margin-bottom:		4rem;			
+		}
+	}
+
+/* 
+GALAXY S9/S9+ (width: 360px)
+IPHONE 6/7/8
+	
+	@media screen and (max-width: 414px) {
+		.del-post {
+			position: 			absolute;
+			right: 				1rem;
+		}
+		
+		#labelremember {
+			padding-left:		30%;
+		}
+	}
+
