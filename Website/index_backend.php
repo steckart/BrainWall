@@ -28,29 +28,15 @@
 		
 <!-- INCLUDING: TOP-NAVIGATION + FOOTER-NAVIGATION =========================================== -->
 
-		<?php require('navtop.php'); ?>
-		<?php require('navfooter.php'); ?>
+		<?php require('navtop_backend.php'); ?>
+		<?php require('navfooter.php'); ?>		
 		
 <!-- INDEX-MAIN CONTENT  ======================================================================================== -->
 		
 		<main id="index-main">
-			<h2>Willkommen zu BrainWall !</h2>
+			<h2>Du bist eingeloggt!</h2>
 			<p>
-				Wenn du die Seite testen willst,<br>
-				logge dich mit folgenden Logindaten ein:
-			</p>
-			
-			<p>
-			<table>
-				<tr>
-					<td>username:</td>
-					<td><b>gast</b></td>
-				</tr>
-				<tr>
-					<td>password:</td>
-					<td><b>12345678</b></td>
-				</tr>
-			</table>
+				Hier kannst du alles einsehen und gegebenfalls ändern.
 			</p>
 		</main>
 
