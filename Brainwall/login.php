@@ -15,7 +15,7 @@
 	<head>
 	
 		<meta charset="UTF-8">
-		<title>BRAINWALL</title>
+		<title>BrainWall - Anmeldung</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="expires" content="0">
 		<link rel="stylesheet" type="text/css" href="css/style2.css">
@@ -40,7 +40,7 @@
 			<form action="user.php" method="post">
 				<div id="container">
 					
-					<h2>BRAINWALL</h2>
+					<h2>Anmeldung</h2>
 					
 						<div class="input-container" style="display:flex;">
 							<span class="fa fa-user icon" ></span>
@@ -54,7 +54,7 @@
 						</div>
 						
 						
-						<button class="loginbtn" type="submit">Login</button>
+						<button class="loginbtn" type="submit">Anmelden</button>
 						<div class="spantext">
 						<label>
 							<input type="checkbox" checked="checked" name="remember" id="remember"> angemeldet bleiben

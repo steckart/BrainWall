@@ -8,7 +8,7 @@ session_start();
 	<head>
 	
 		<meta charset="UTF-8">
-		<title>BRAINWALL</title>
+		<title>BrainWall - Registrierung</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="expires" content="0">
 		<link rel="stylesheet" type="text/css" href="css/style2.css">
@@ -32,7 +32,7 @@ session_start();
 			<form action='user.php' method='post' onsubmit="return matchpass()">
 				<div id="container">
 				
-					<h2>BRAINWALL</h2>
+					<h2>Registrierung</h2>
 					
 					<div class="input-container">
 						<span class="fa fa-user icon"></span>
@@ -55,11 +55,11 @@ session_start();
 					</div>
 					
 					<div class="spantext">
-					<span>By creating an account you agree to our <a href="terms.php">Terms & Privacy</a>.</span>
+					<span>Bei der Account-Erstellung akzeptierst du unsere <a href="terms.php">AGB & DSGVO</a>.</span>
 					</div>
 					<input type="hidden" name="rformname" id="rformname" value="register"><br>
 
-					<button type="submit" id="regbutton" class="registerbtn" >Register</button>
+					<button type="submit" id="regbutton" class="registerbtn" >Registrierung</button>
 
 					
 					<div class="spantext">	
