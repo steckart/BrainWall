@@ -4,7 +4,7 @@
 
 	session_start();
 	
-	if( !isset($_COOKIE['Remember']) ) {
+	if( isset($_COOKIE['Remember']) ) {
 		header('Location: jobs_backend.php');
 		exit;
 	}
@@ -21,7 +21,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="expires" content="0">
 		<link rel="stylesheet" type="text/css" href="css/styles_home.css">
-		<script src="src/js/javascript.js"></script>
+		<script src="js/javascript.js"></script>
 	</head>
 	
 	<body>

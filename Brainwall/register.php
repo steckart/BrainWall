@@ -28,8 +28,6 @@ session_start();
 	<?php require('navfooter.php'); ?>
 	
 	
-	
-	
 		<div id='idDivReg' class='divReg'>	
 			<form action='user.php' method='post' onsubmit="return matchpass()">
 				<div id="container">
@@ -57,7 +55,7 @@ session_start();
 					</div>
 					
 					<div class="spantext">
-					<span>By creating an account you agree to our <a href="termsprivacy.php">Terms & Privacy</a>.</span>
+					<span>By creating an account you agree to our <a href="terms.php">Terms & Privacy</a>.</span>
 					</div>
 					<input type="hidden" name="rformname" id="rformname" value="register"><br>
 

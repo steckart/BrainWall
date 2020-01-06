@@ -25,7 +25,7 @@
 		<link rel="stylesheet" text="text/css" href="css/styleNav.css">
 		<link rel="stylesheet" text="text/css" href="css/styleForm.css">
 		<link rel="stylesheet" type="text/css" href="css/styles_home.css">
-		<script src="src/js/javascript.js"></script>
+		<script src="js/javascript.js"></script>
 	</head>
 	
 	<body>
