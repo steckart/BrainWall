@@ -33,8 +33,6 @@
 	<?php require('navfooter.php'); ?>
 	
 	
-	
-	
 	<body>
 		<div id="idDivLog" class='divLog'>
 			<form action="user.php" method="post">

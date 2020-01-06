@@ -12,5 +12,4 @@ function matchpass(){
 		return false;  
 	}  
 }
-
   
