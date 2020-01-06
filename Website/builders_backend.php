@@ -4,7 +4,7 @@
 
 	session_start();
 	
-	if( isset($_COOKIE['remember']) ) {
+	if( !isset($_COOKIE['remember']) ) {
 		header('Location: builders.php');
 		exit;
 	}
