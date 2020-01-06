@@ -120,17 +120,18 @@
 
 	#footernav {
 		z-index: 			10;
-		left: 				0;
 		bottom: 			0;
 		position: 			fixed; /* important for z-index */
 		background-color: 	#3D3F45;
 		width: 				100%;
+
 	}
 
 	#footernav > ul {
 		display: 			flex;
 		list-style-type:	none;
 		padding-left: 		0;
+		margin-left: 		25%;
 	}
 
 	
