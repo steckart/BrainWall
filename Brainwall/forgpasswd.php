@@ -15,7 +15,7 @@ session_start();
 		<link rel="stylesheet" text="text/css" href="fontawesome/css/all.min.css">
 		<link rel="stylesheet" text="text/css" href="css/styleNav.css">
 		<link rel="stylesheet" text="text/css" href="css/styleForm.css">
-		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/styles_home.css">
 		
 		<script src="js/script.js"></script>
 		

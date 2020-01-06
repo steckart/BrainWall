@@ -1,14 +1,23 @@
 <?php
-session_start();
 
-?>
-<!DOCTYPE html>
+// SESSION-START ===============================================================================================
 
-<html lang="de">
-	<head>
+	session_start();
 	
+	if( isset($_COOKIE['Remember']) ) {
+		header('Location: terms_backend.php');
+		exit;
+	}
+?>
+
+<!-- HTML ====================================================================================================== -->
+
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
 		<meta charset="UTF-8">
-		<title>F:IT</title>
+		<title>BrainWall - AGB & DSGVO</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="expires" content="0">
 		<link rel="stylesheet" type="text/css" href="css/style2.css">
@@ -17,21 +26,22 @@ session_start();
 		<link rel="stylesheet" text="text/css" href="css/styleForm.css">
 		<link rel="stylesheet" type="text/css" href="css/styles_home.css">
 		<script src="js/script.js"></script>
-		
 	</head>
 	
 	<body>
-	
-	
-	<?php require('navtop.php'); ?>
-	<?php require('navfooter.php'); ?>
-	
-	
-	
-		<div class="divMainThread">
+		
+<!-- INCLUDING: TOP-NAVIGATION + FOOTER-NAVIGATION =========================================== -->
+
+		<?php require('navtop.php'); ?>
+		<?php require('navfooter.php'); ?>	
+		
+<!-- INDEX-MAIN CONTENT  ======================================================================================== -->
+		
+		<main id="index-main">
+			<div class="divMainThread">
 
     <header>
-      <h1>Terms & Privacy</h1>
+      <h1>AGB & DSGVO</h1>
     </header>
 
      <h2>Datenschutzerklärung</h2>
@@ -139,18 +149,7 @@ session_start();
 
 				<p>
 				<a target="_blank" href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html">Muster-Datenschutzerklärung</a> der <a target="_blank" href="https://www.ratgeberrecht.eu/datenschutz/datenschutzerklaerung-generator-dsgvo.html">Anwaltskanzlei Weiß &amp; Partner</a></p>
-
-      
-      
-	
-	</div>
-		<?php include 'forms/login.form.php'; ?>
-		<?php include 'forms/register.form.php'; ?>
-		<?php include 'forms/forgotpswd.form.php'; ?>
-		<?php include 'forms/termsprivacy.form.php'; ?>
+		</div>
+	</main>
 	</body>
-	
-	<footer>
-		<?php include 'tpl/foot.tpl.php'; ?>
-	</footer>
 </html> 
