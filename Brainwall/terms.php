@@ -13,6 +13,7 @@
 		<link rel="stylesheet" text="text/css" href="css/styleNav.css">
 		<link rel="stylesheet" text="text/css" href="css/styleForm.css">
 		<link rel="stylesheet" type="text/css" href="css/styles_home.css">
+		<link rel="stylesheet" type="text/css" href="css/userMenu.css">
 		<script src="js/script.js"></script>
 	</head>
 	
