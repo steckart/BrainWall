@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="expires" content="0">
 		<link rel="stylesheet" type="text/css" href="css/styles_home.css">
+		<link rel="stylesheet" type="text/css" href="css/style2.css">
 		<script src="js/javascript.js"></script>
 	</head>
 	
@@ -35,10 +36,12 @@
 <!-- INDEX-MAIN CONTENT  ======================================================================================== -->
 		
 		<main id="index-main">
+		<div class="divMainThread">
 			<h2>Über diese Seite</h2>
 			<p>
 				Hier erzählen wir etwas über dieses Datenbank & Websiteprojekt.
 			</p>
+		</div>
 		</main>
 
 	</body>
