@@ -13,7 +13,10 @@
 				</li>			
 				<li>
 					<a href="builders.php" title="Routensetzerübersicht" id="builders">Routensetzer</a>
-				</li>				
+				</li>
+				<li>
+					<a href="affenindex.php" title="Affenindex" id="apeindex">Affenindex</a>
+				</li>					
 				<li class="dropdown">
 					
 					<a href="#" title="User" id="user">
