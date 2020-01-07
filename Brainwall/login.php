@@ -54,14 +54,14 @@
 						
 						<button class="loginbtn" type="submit">Anmelden</button>
 						<div class="spantext">
-						<label>
+						<label id="spantext1">
 							<input type="checkbox" checked="checked" name="remember" id="remember"> angemeldet bleiben
 						</label>
 						</div>
 						<br>
 						<div class="spantext">	
-							<span class="psw">Du hast noch kein Profil? Registriere dich <a href="register.php">hier</a>.</span><br><br>
-							<span class="psw"><a href="forgpasswd.php">Passwort vergessen?</a></span>
+							<span id="spantext2">Du hast noch kein Profil? Registriere dich <a href="register.php">hier</a>.</span><br><br>
+							<span id="spantext3"><a href="forgpasswd.php">Passwort vergessen?</a></span>
 						</div>
 				</div>
 			</form> 

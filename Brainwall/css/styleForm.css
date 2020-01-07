@@ -4,6 +4,7 @@
 	width: 30%;
 	margin: 5% auto 5% auto;
 	padding: 2%;
+	box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 20px 20px rgba(0, 0, 0, 0.05);
 }
 
 .registerbtn, .loginbtn {
@@ -38,4 +39,20 @@
 }
 .spantext {
 	margin: 15px 20px 0px 0px;
+}
+#spantext1 {
+	margin: 0 35%;
+}
+#spantext2 {
+	margin: 0 17%;
+}
+#spantext3 {
+	margin: 0 35%;
+}
+
+.spanlogintext {
+	margin: 0 18%;
+}
+.spantermstext {
+	margin: 0 2%;
 }

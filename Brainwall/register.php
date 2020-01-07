@@ -56,7 +56,7 @@ session_start();
 					</div>
 					
 					<div class="spantext">
-					<span>Bei der Account-Erstellung akzeptierst du unsere <a href="terms.php">AGB & DSGVO</a>.</span>
+					<span class="spantermstext">Bei der Account-Erstellung akzeptierst du unsere <a href="terms.php">AGB & DSGVO</a>.</span>
 					</div>
 					<input type="hidden" name="rformname" id="rformname" value="register"><br>
 
@@ -64,7 +64,7 @@ session_start();
 
 					
 					<div class="spantext">	
-					<span class="psw">Du hast bereits ein Account? <a href="login.php">Logge dich ein</a>.</span>
+					<span class="spanlogintext">Du hast bereits ein Account? <a href="login.php">Logge dich ein</a>.</span>
 					</div>
 				</div>
 			</form> 
