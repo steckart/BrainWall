@@ -25,6 +25,7 @@
 		margin: 			0px;
 		font-family: 		'Helvetica Neue', 'Arial', sans-serif;
 		font-size: 			16px;
+		background-color:	#f3f3f3;
 	}
 
 	h2 {
@@ -39,8 +40,6 @@
 		height: 			100%;
 		padding: 			1rem;
 		top: 				0;
-	}
-	.active {
 		color:				#3D3F45 !important;
 	}
 	
@@ -131,7 +130,7 @@
 		display: 			flex;
 		list-style-type:	none;
 		padding-left: 		0;
-		margin-left:		35%;
+		margin-left:		38%;
 	}
 
 	
