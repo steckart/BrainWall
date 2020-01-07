@@ -10,7 +10,7 @@ function apeindex(){
 	var result = document.getElementById("result");
 	
 
-	var re = output1.innerHTML/output2.innerHTML;
+	var re = output2.innerHTML/output1.innerHTML;
 	result.innerHTML = re.toFixed(2);
 	
 	}
@@ -25,7 +25,7 @@ function apeindex(){
 	var result = document.getElementById("result");
 	
 
-	var re = output1.innerHTML/output2.innerHTML;
+	var re = output2.innerHTML/output1.innerHTML;
 	result.innerHTML = re.toFixed(2);
 	}
 	
