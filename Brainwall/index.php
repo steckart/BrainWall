@@ -63,8 +63,5 @@
 
 		<?php require('navfooter.php'); ?>
 		
-		
-
-
 	</body>
 </html> 
