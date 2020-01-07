@@ -15,6 +15,9 @@
 					<a href="builders.php" title="Routensetzerübersicht" id="builders">Routensetzer</a>
 				</li>				
 				<li>
+					<a href="affenindex.php" title="Affenindex" id="apeindex">Affenindex</a>
+				</li>		
+				<li>
 					<a href="register.php"
 				       title="Register"
 					   id="aregister"
