@@ -3,7 +3,7 @@
 		<nav id="topnav">
 			<ul>
 				<li>
-					<a href="index.php" title="Home" id="home" class="active">Startseite</a>
+					<a href="index.php" title="Home" id="home">Startseite</a>
 				</li>
 				<li>
 					<a href="locations.php" title="Hallenübersicht" id="locations">Hallen</a>
@@ -26,7 +26,7 @@
 <script>
 	for (var i = 0; i < document.links.length; i++) {
 		if (document.links[i].href == document.URL) {
-			document.links[i].className = 'active';
+			document.links[i].className += ' active';
 		}
 	}
 </script>

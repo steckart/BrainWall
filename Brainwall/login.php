@@ -5,7 +5,7 @@
 	session_start();
 	
 	if( isset($_COOKIE['Remember']) ) {
-		header('Location: index_backend.php');
+		header('Location: index.php');
 		exit;
 	}
 ?>

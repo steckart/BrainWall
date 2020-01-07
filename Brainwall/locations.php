@@ -1,15 +1,3 @@
-<?php
-
-// SESSION-START ===============================================================================================
-
-	session_start();
-	
-	if( isset($_COOKIE['Remember']) ) {
-		header('Location: locations_backend.php');
-		exit;
-	}
-?>
-
 <!-- HTML ====================================================================================================== -->
 
 <!DOCTYPE html>
@@ -26,9 +14,22 @@
 	
 	<body>
 		
-<!-- INCLUDING: TOP-NAVIGATION + FOOTER-NAVIGATION =========================================== -->
+<?php
 
-		<?php require('navtop.php'); ?>
+// SESSION-START ===============================================================================================
+
+	session_start();
+	
+	if( !isset($_COOKIE['Remember']) ) {
+		require('navtop.php');	
+	}
+	else {
+		require('navtop_backend.php');
+	}
+?>
+		
+<!-- INCLUDING: FOOTER-NAVIGATION =========================================== -->
+
 		<?php require('navfooter.php'); ?>
 		
 <!-- INDEX-MAIN CONTENT  ======================================================================================== -->

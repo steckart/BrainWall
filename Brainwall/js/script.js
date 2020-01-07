@@ -12,4 +12,17 @@ function matchpass(){
 		return false;  
 	}  
 }
+
+
+// Funktioniert noch nicht!
+// Funktioniert bisher nur, wenn <script> in der "navtop.php" am Ende steht
+document.addEventListener('DOMContentLoaded', start);
+
+function start() {
+	for (var i = 0; i < document.links.length; i++) {
+		if (document.links[i].href == document.URL) {
+			document.links[i].className += ' active';
+		}
+	}
+}
   

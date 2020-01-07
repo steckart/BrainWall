@@ -1,15 +1,3 @@
-<?php
-
-// SESSION-START ===============================================================================================
-
-	session_start();
-	
-	if( isset($_COOKIE['Remember']) ) {
-		header('Location: index_backend.php');
-		exit;
-	}
-?>
-
 <!-- HTML ====================================================================================================== -->
 
 <!DOCTYPE html>
@@ -25,15 +13,16 @@
 	</head>
 	
 	<body>
-		
-<!-- INCLUDING: TOP-NAVIGATION + FOOTER-NAVIGATION =========================================== -->
 
-		<?php require('navtop.php'); ?>
-		<?php require('navfooter.php'); ?>
-		
-		
-<!-- INDEX-MAIN CONTENT  ======================================================================================== -->
-		
+<?php
+
+// SESSION-START ===============================================================================================
+
+	session_start();
+	
+	if( !isset($_COOKIE['Remember']) ) {
+		require('navtop.php');
+?>		
 		<main id="index-main">
 			<h2>Willkommen zu BrainWall !</h2>
 			<p>
@@ -54,6 +43,28 @@
 			</table>
 			</p>
 		</main>
+<?php	
+	}
+	else {
+		require('navtop_backend.php');
+?>		
+		<main id="index-main">
+			<h2>Du bist eingeloggt!</h2>
+			<p>
+				Hier kannst du alles einsehen und gegebenfalls ändern.
+			</p>
+		</main>
+		
+<?php
+	}
+?>
+		
+<!-- INCLUDING: FOOTER-NAVIGATION =========================================== -->
+
+		<?php require('navfooter.php'); ?>
+		
+		
+
 
 	</body>
 </html> 
