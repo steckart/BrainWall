@@ -16,10 +16,8 @@
 				</li>				
 				<li class="dropdown">
 					
-					<a href="#" title="User" id="user">
-					<div class="user-avatar">
-						<img src="images/Avatar_Gray.jpg" alt="avatar" class="img-fluid">
-					</div>
+					<a href="#" title="User" id="user" class="right">
+					<span class="fa fa-user"></span>
 					<?= $_COOKIE['Remember']; ?></a>
 					    <div class="dropdown-content">
 							<a href="#">Profil</a>

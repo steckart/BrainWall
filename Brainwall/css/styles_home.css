@@ -75,6 +75,7 @@
 		position: 			absolute;
 		top: 				0;
 		padding-bottom: 	0.95rem !important;
+		display: block ruby;
 	}
 	#aregister {
 		margin-right:		7rem;
