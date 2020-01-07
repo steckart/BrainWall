@@ -14,11 +14,21 @@
 				<li>
 					<a href="builders.php" title="Routensetzerübersicht" id="builders">Routensetzer</a>
 				</li>				
-				<li>
+				<li class="dropdown">
+					<div class="user-avatar">
+						<img src="images/Avatar_Gray.jpg" alt="avatar" class="img-fluid">
+					</div>
 					<a href="#"
 				       title="User"
 					   id="user"
-					   class="right">Benutzer</a>
+					   >Benutzer</a>
+					      <div class="dropdown-content">
+							  <a href="#">Profil</a>
+							  <a href="#">Personal Data</a>
+							  <a href="#">Routes</a>
+							  <a href="#">Settings</a>
+							  <a href="logout.php">Log Out</a>
+						</div>
 				</li>
 			</ul>
 		</nav>
