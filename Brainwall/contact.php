@@ -35,15 +35,39 @@
 
 		<?php require('navfooter.php'); ?>	
 		
-<!-- INDEX-MAIN CONTENT  ======================================================================================== -->
+<!-- MAIN CONTACT-FORM ============================================================================================ -->
 		
 		<main id="index-main">
 		<div class="divMainThread">
 			<h2>Kontakt</h2>
-			<p>
-				Hier findest du ein Kontaktformular.
-			</p>
-		</div>
+					
+			<p>Du willst uns kontaktieren?<br>
+			Schreib uns hier:</p>
+		
+			<div id="contactform">
+				<form action="mailto:contact@brainwall.de" method="post" enctype="text/plain">
+					<p>
+						<label><b>Deine E-Mail*</b></label><br> 
+						<input class="input-field" type="email" id="contemail" name="contemail"
+						pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30" required>
+					</p>
+					
+					<p>
+						<label><b>Deine Nachricht*</b></label><br>
+						<textarea class="input-field" id="conttext" name="conttext" rows="10" required></textarea>
+					</p>
+					
+					<p>
+						<input type="checkbox" id="check1" name="check1" checked required>
+						<label>Ich stimme der Übertragung meiner Daten zu.</label>
+					</p>
+					
+					<p id="loginbtn">
+						<button class="loginbtn" type="submit">Sende Nachricht</button>
+					</p>
+				</form>
+			</div>
+			
 		</main>
 
 	</body>
