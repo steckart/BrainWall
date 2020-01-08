@@ -1,0 +1,55 @@
+
+#avatar {
+	grid-area: avatar;
+}
+#edit {
+	grid-area: edit;
+}
+
+#username{
+	grid-area: username;
+
+}
+#profil-nav {
+	grid-area: profil-nav ;
+
+}
+
+
+#profil {
+	grid-area: profil ;
+
+}
+
+#gridcontainer {
+	display: grid;
+	grid-template-areas:
+		'avatar username username'
+		'avatar profil-nav profil-nav'
+		'avatar profil profil'
+		'edit profil profil'
+		'edit profil profil'
+		'edit profil profil';
+	grid-gap: 0px;
+	padding: 0px;
+	align-items: center;
+
+}
+
+@media screen and (max-width: 376px) {
+	#gridcontainer {
+		display: grid;
+		grid-template-areas:
+			'username'
+			'avatar'
+			'edit'
+			'profil';
+		grid-gap: 0px;
+		padding: 0px;
+		align-items: center;
+	}
+	
+}
+body {
+   padding-top: 56px;
+}
