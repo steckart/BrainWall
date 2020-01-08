@@ -5,6 +5,7 @@
 	margin: 5rem auto 5% auto;
 	padding: 2%;
 	box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 6px 20px 20px rgba(0, 0, 0, 0.05);
+	min-width: 30rem;
 }
 
 .registerbtn, .loginbtn {
