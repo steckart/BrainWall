@@ -63,7 +63,7 @@
 					</p>
 					
 					<p id="loginbtn">
-						<button class="loginbtn" type="submit">Sende Nachricht</button>
+						<button class="loginbtn" type="submit">Senden</button>
 					</p>
 				</form>
 			</div>
