@@ -92,7 +92,6 @@
 ?>
 		
 <main class="main">
-	<form method="post" action="useracc.php">
 		<p>
 			<div class="input-container-account">
 				<label for="accfname" class="container-acc"><b>Titel:</b></label>
