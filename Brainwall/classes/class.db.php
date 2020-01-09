@@ -27,7 +27,10 @@ class Db{
 	}
 	
 	function selectProfileDb($selection, $where){
-		$this -> sql = 'SELECT ' . $selection . ' FROM xtf1_user AS user JOIN xtf1_profile AS profile ON user.userid = profile.user ' . $where;
+		$this -> sql = 'SELECT ' . $selection . ' FROM xtf1_user AS user 
+		LEFT JOIN xtf1_profile AS profile ON user.userid = profile.user
+		LEFT JOIN xtf1_personaldata AS personal ON user.userid = personal.user
+		' . $where;
 		$this -> statement = $this -> db -> prepare($this -> sql);
 		$this -> statement -> execute();
 		$this -> data = $this -> statement -> fetchAll();
@@ -42,6 +45,12 @@ class Db{
 	
 	function insertProfileDb($data) {
 		$this -> sql = 'INSERT INTO xtf1_profile (profileid, apeindex, height, climbingscore, user) VALUES (?, ?, ?, ?, ?)';
+		$this -> statement = $this -> db -> prepare($this -> sql);
+		$this -> statement -> execute($data);
+	}
+	
+	function insertPersonalDb($data) {
+		$this -> sql = 'INSERT INTO xtf1_personaldata (personalid, first_name, last_name, street, zip, location, birth_date, phone, user) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
 		$this -> statement = $this -> db -> prepare($this -> sql);
 		$this -> statement -> execute($data);
 	}

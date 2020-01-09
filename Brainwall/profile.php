@@ -47,7 +47,7 @@ session_start();
 		<div id="username"><h2><?= $_COOKIE['Remember'] ?></h2></div>
 		
 <?php
-	if ( isset($sel[0]['profileid']) && $_COOKIE['Remember'] == $sel[0]['username'] && !isset($_POST['accupdate']) ) {
+	if ( ( isset($sel[0]['profileid']) || isset($sel[0]['personalid']) ) && $_COOKIE['Remember'] == $sel[0]['username'] && !isset($_POST['accupdate']) ) {
 ?>
 		<form method="post" action="profile.php">
 			<div id="edit">
@@ -70,16 +70,24 @@ session_start();
 	}
 ?>
 		
-		
 		<div id="profil-nav">
-			<a href="profile.php">Profil</a> | 
-			<a href="personaldata.php">Persönliche Daten</a> | 
+		<form method="post" action="profile.php">
+			<input type="submit" name="profile" value="Profil"> |
+			<input type="submit" name="personaldata" value="Persönliche Daten"> | 
 			<a href="user_routes.php">Routen</a> | 
-			<a href="settings.php">Settings</a>  
+			<a href="settings.php">Settings</a>
+		</form>
 		</div>
 		
 		<div id="profil">
-			<?php require('forms/profile.form.php'); ?>
+<?php
+	if ( isset($_POST['profile']) || !isset($_POST['profile']) && !isset($_POST['personaldata']) ) {
+			require('forms/profile.form.php');
+	}
+	elseif ( isset($_POST['personaldata']) ) {
+		require('forms/personaldata.form.php');
+	}
+?>
 		</div>
 	</div>
 
