@@ -26,14 +26,34 @@ class Db{
 		return $this -> data;
 	}
 	
+	function selectProfileDb($selection, $where){
+		$this -> sql = 'SELECT ' . $selection . ' FROM xtf1_user AS user JOIN xtf1_profile AS profile ON user.userid = profile.user ' . $where;
+		$this -> statement = $this -> db -> prepare($this -> sql);
+		$this -> statement -> execute();
+		$this -> data = $this -> statement -> fetchAll();
+		return $this -> data;
+	}
+	
 	function insertDb($data) {
 		$this -> sql = 'INSERT INTO xtf1_user (username, email, password) VALUES (?, ?, ?)';
 		$this -> statement = $this -> db -> prepare($this -> sql);
 		$this -> statement -> execute($data);
-}
+	}
+	
+	function insertProfileDb($data) {
+		$this -> sql = 'INSERT INTO xtf1_profile (profileid, apeindex, height, climbingscore, user) VALUES (?, ?, ?, ?, ?)';
+		$this -> statement = $this -> db -> prepare($this -> sql);
+		$this -> statement -> execute($data);
+	}
 
 	function updateDb($selection, $update, $user){
 		$this -> sql = 'UPDATE xtf1_user SET ' . $selection . ' = "' . $update . '" WHERE username = "' . $user . '"' ;
+		$this -> statement = $this -> db -> prepare($this -> sql);
+		$this -> statement -> execute();
+	}
+	
+	function updateProfileDb($selection, $update, $user){
+		$this -> sql = 'UPDATE xtf1_profile SET ' . $selection . ' = "' . $update . '" WHERE user = "' . $user . '"' ;
 		$this -> statement = $this -> db -> prepare($this -> sql);
 		$this -> statement -> execute();
 	}
