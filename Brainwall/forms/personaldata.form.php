@@ -58,14 +58,14 @@
 			<br>
 			
 			<div class="input-container-account">
-				<label for="accpswd" class="container-acc"><b>Bestätige Änderungen mit deinem Passwort:</b></label>
-					<input class="input-field" type="password" placeholder="Passwort" 
+				<label for="accpswd" class="container-acc"><b>Bestätige Änderungen mit deinem Passwort:</b></label><br>
+					<input class="marginleft1rem" type="password" placeholder="Passwort" 
 						   name="accpswd" id="accpswd" required>
 			</div>
 
 			<input type="hidden" name="personalupdate" id="personalupdate" value="personalupdate">
 
-			<button type="submit" class="registerbtn">Bestätigen</button>
+			<button type="submit" class="marginleft1rem">Bestätigen</button>
 		</p>
 	</form>
 </main>
@@ -172,14 +172,14 @@
 			<br>
 			
 			<div class="input-container-account">
-				<label for="accpswd" class="container-acc"><b>Bestätige Änderungen mit deinem Passwort:</b></label>
-					<input class="input-field" type="password" placeholder="Passwort" 
+				<label for="accpswd" class="container-acc"><b>Bestätige Änderungen mit deinem Passwort:</b></label><br>
+					<input class="marginleft1rem" type="password" placeholder="Passwort" 
 						   name="accpswd" id="accpswd" required>
 			</div>
 
 			<input type="hidden" name="personalinsert" id="personalinsert" value="personalinsert">
 
-			<button type="submit" class="registerbtn">Bestätigen</button>
+			<button type="submit" class="marginleft1rem">Bestätigen</button>
 		</p>
 	</form>
 </main>

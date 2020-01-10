@@ -39,6 +39,10 @@
 	padding-left: 1rem;
 }
 
+.marginleft1rem {
+	margin-left: 1rem;
+}
+
 #gridcontainer {
 	display: grid;
 	grid-template-areas:
