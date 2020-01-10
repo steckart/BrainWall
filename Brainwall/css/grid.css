@@ -2,23 +2,41 @@
 #avatar {
 	grid-area: avatar;
 }
+#avatar-pic {
+	left: 39%;
+	position: relative;
+}
 #edit {
 	grid-area: edit;
 }
-
-#username{
+.edit-btn {
+	left: 52%;
+	position: relative;
+}
+#username {
 	grid-area: username;
-
+	padding-left: 1rem;
 }
 #profil-nav {
 	grid-area: profil-nav ;
-
 }
-
-
+#profil-nav > a {
+	color:		#3D3F45;
+	text-decoration: none;
+	padding:	1rem;
+}
+#profil-nav > a:hover {
+	color:		#3D3F45;
+	background-color: 	#E5E5E5;
+	text-decoration: none;
+	padding:	1rem;
+}
 #profil {
 	grid-area: profil ;
+}
 
+.container-acc {
+	padding-left: 1rem;
 }
 
 #gridcontainer {

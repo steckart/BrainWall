@@ -8,7 +8,7 @@
 
 <!-- PROFILE-FORM ===================================================================================== -->		
 
-	<main class="main">
+	<main class="main-profile">
 	<form method="post" action="useracc.php">
 		<p>
 		
@@ -64,7 +64,7 @@
 	} elseif ( isset($sel[0]['profileid']) ) {
 ?>
 	
-	<main class="main">
+	<main class="main-profile">
 	
 		<p>
 		
@@ -103,7 +103,7 @@
 	} else {
 ?>
 
-	<main class="main">
+	<main class="main-profile">
 	<form method="post" action="useracc.php">
 		<p>
 		

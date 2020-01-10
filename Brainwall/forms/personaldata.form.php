@@ -8,7 +8,7 @@
 
 <!-- PERSONAL DATA-FORM ===================================================================================== -->	
 		
-<main class="main">
+<main class="main-profile">
 	<form method="post" action="useracc.php">
 		<p>
 			
@@ -74,7 +74,7 @@
 	} elseif ( isset($sel[0]['personalid']) ) {
 ?>
 		
-<main class="main">
+<main class="main-profile">
 		<p>			
 			<div class="input-container-account">
 				<label for="accfname" class="container-acc"><b>Vorname:</b></label>
@@ -109,24 +109,7 @@
 			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Geburtstag:</b></label>
 					<?= date('d.m.Y', strtotime($sel[0]['birth_date'])); ?>
-					<!--  $sel[0]['birth_date'];  -->
 			</div>
-			
-			<!-- 
-			
-			<div class="input-container-account">
-				<label for="accemail" class="container-acc"><b>Geschlecht:</b></label>
-					<input class="input-field" type="text" value="<?= $sel[0]['gender']; ?>" 
-						   name="accaddress" id="accaddress" disabled>
-			</div> 
-			
-			<div class="input-container-account">
-				<label for="accemail" class="container-acc"><b>Avatar:</b></label>
-					<input class="input-field" type="text" value="<?= $sel[0]['avatar']; ?>" 
-						   name="accavatar" id="accavatar" disabled>
-			</div>
-			
-			-->
 			
 		</p>
 	</form>
@@ -136,7 +119,7 @@
 	} else {
 ?>
 
-<main class="main">
+<main class="main-profile">
 	<form method="post" action="useracc.php">
 		<p>
 				

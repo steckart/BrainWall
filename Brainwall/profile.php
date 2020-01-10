@@ -43,7 +43,7 @@ session_start();
 <!-- SECTION: PROFILE-GRID =========================================== -->
 
 	<div id="gridcontainer">
-		<div id="avatar"> <img src="images/Avatar_Gray.jpg" alt="avatar"></div>
+		<div id="avatar"> <img src="images/Avatar_Gray.jpg" alt="avatar" id="avatar-pic"></div>
 		<div id="username"><h2><?= $_COOKIE['Remember'] ?></h2></div>
 		
 <?php
@@ -54,13 +54,13 @@ session_start();
 <?php
 		if ( @$_GET['s'] == 'profile' ) {
 ?>	
-				<button type="submit" class="btn">Profil Ändern</button><br>
+				<button type="submit" class="edit-btn">Profil Ändern</button><br>
 				<input type="hidden" name="profupdate" id="profupdate" value="profupdate">
 <?php
 		}
 		if ( @$_GET['s'] == 'personaldata' ) {
 ?>
-				<button type="submit" class="btn">Profil Ändern</button><br>
+				<button type="submit" class="edit-btn">Profil Ändern</button><br>
 				<input type="hidden" name="personalupdate" id="personalupdate" value="personalupdate">
 <?php
 		}
@@ -73,7 +73,7 @@ session_start();
 ?>		
 		<form method="post" action="useracc.php">
 			<div id="edit">
-				<button type="submit" class="btn">Folgen</button>
+				<button type="submit" class="edit-btn">Folgen</button>
 				<input type="hidden" name="follow" id="follow" value="follow">
 			</div>
 		</form>
@@ -104,6 +104,8 @@ session_start();
 	}
 ?>
 		</div>
+		
+		
 	</div>
 
 

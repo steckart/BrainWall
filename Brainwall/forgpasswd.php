@@ -33,7 +33,7 @@ session_start();
 			<form>
 				<div id="container">
 				
-					<h2>BRAINWALL</h2>
+					<h2>Passwort vergessen?</h2>
 					<p>Hiermit senden wir Ihnen ein temporäres Passwort</p>
 					
 					<div class="input-container">
