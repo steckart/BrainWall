@@ -23,8 +23,8 @@
 					<span class="fa fa-user"></span>
 					<?= $_COOKIE['Remember']; ?></a>
 					    <div class="dropdown-content">
-							<a href="profile.php">Profil</a>
-							<a href="#">Personal Data</a>
+							<a href="profile.php?s=profile">Profil</a>
+							<a href="profile.php?s=personaldata">Personal Data</a>
 							<a href="#">Routes</a>
 							<a href="#">Settings</a>
 							<a href="logout.php">Log Out</a>

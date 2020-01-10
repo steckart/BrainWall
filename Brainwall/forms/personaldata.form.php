@@ -2,7 +2,7 @@
 
 // VIEW OR EDIT DATA ===============================================================================================
 	
-	if( isset($_POST['accupdate']) ) {
+	if( isset($_POST['personalupdate']) ) {
 		
 ?>		
 
@@ -23,35 +23,35 @@
 					<input class="input-field" type="text" value="<?= $sel[0]['last_name']; ?>" 
 						   name="acclname" id="acclname">
 			</div>
-
+			
 			<div class="input-container-account">
-				<label for="accuname" class="container-acc"><b>Username:</b></label>					
-					<input class="input-field" type="text" value="<?= $sel[0]['username']; ?>" 
-						   name="accuname" id="accuname" disabled>
-			</div>
-
-			<div class="input-container-account">
-				<label for="accemail" class="container-acc"><b>E-Mail:</b></label>
-					<input class="input-field" type="text" value="<?= $sel[0]['email']; ?>" 
-						   name="accemail" id="accemail">
+				<label for="accemail" class="container-acc"><b>Adresse:</b></label>
+					<input class="input-field" type="text" value="<?= $sel[0]['street']; ?>" 
+						   name="accaddress" id="accaddress">						   
 			</div>
 			
 			<div class="input-container-account">
-				<label for="accemail" class="container-acc"><b>Straße:</b></label>
-					<input class="input-field" type="text" value="<?= $sel[0]['street'] . ', ' . $sel[0]['zip'] . ' ' . $sel[0]['location'] ; ?>" 
-						   name="accaddress" id="accaddress">						   
+				<label for="accemail" class="container-acc"><b>Postleitzahl:</b></label>
+					<input class="input-field" type="text" value="<?= $sel[0]['zip']; ?>" 
+						   name="acczip" id="acczip">						   
+			</div>
+			
+			<div class="input-container-account">
+				<label for="accemail" class="container-acc"><b>Ort:</b></label>
+					<input class="input-field" type="text" value="<?= $sel[0]['location']; ?>" 
+						   name="acclocation" id="acclocation">						   
 			</div>
 			
 			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Telefon:</b></label>
 					<input class="input-field" type="text" value="<?= $sel[0]['phone']; ?>" 
-						   name="acctelephone" id="acctelephone">
+						   name="accphone" id="accphone">
 			</div>
 			
 			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Geburtstag:</b></label>
-					<input class="input-field" type="text" value="<?= $sel[0]['birthdate']; ?>" 
-						   name="accage" id="accage">
+					<input class="input-field" type="text" value="<?= $sel[0]['birth_date']; ?>" 
+						   name="accbday" id="accbday">
 			</div>
 			
 			<hr>
@@ -63,7 +63,7 @@
 						   name="accpswd" id="accpswd" required>
 			</div>
 
-			<input type="hidden" name="accupdate" id="accupdate" value="accupdate">
+			<input type="hidden" name="personalupdate" id="personalupdate" value="personalupdate">
 
 			<button type="submit" class="registerbtn">Bestätigen</button>
 		</p>
@@ -85,20 +85,20 @@
 				<label for="acclname" class="container-acc"><b>Nachname:</b></label>
 					<?= $sel[0]['last_name']; ?>
 			</div>
-
-			<div class="input-container-account">
-				<label for="accuname" class="container-acc"><b>Username:</b></label>					
-					<?= $sel[0]['username']; ?>
-			</div>
-
-			<div class="input-container-account">
-				<label for="accemail" class="container-acc"><b>E-Mail:</b></label>
-					<?= $sel[0]['email']; ?>
-			</div>
 			
 			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Adresse:</b></label>
-					<?= $sel[0]['street'] . ', ' . $sel[0]['zip'] . ' ' . $sel[0]['location'] ; ?>						   
+					<?= $sel[0]['street']; ?>						   
+			</div>
+						
+			<div class="input-container-account">
+				<label for="accemail" class="container-acc"><b>Postleitzahl:</b></label>
+					<?= $sel[0]['street']; ?>						   
+			</div>
+						
+			<div class="input-container-account">
+				<label for="accemail" class="container-acc"><b>Ort:</b></label>
+					<?= $sel[0]['zip']; ?>						   
 			</div>
 			
 			<div class="input-container-account">
@@ -108,7 +108,7 @@
 			
 			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Geburtstag:</b></label>
-					<?= $sel[0]['birthdate']; ?>
+					<?= $sel[0]['birth_date']; ?>
 			</div>
 			
 			<!-- 
@@ -153,17 +153,6 @@
 						   name="acclname" id="acclname">
 			</div>
 
-			<div class="input-container-account">
-				<label for="accuname" class="container-acc"><b>Username:</b></label>					
-					<input class="input-field" type="text" value="<?= $sel[0]['username']; ?>" 
-						   name="accuname" id="accuname" disabled>
-			</div>
-
-			<div class="input-container-account">
-				<label for="accemail" class="container-acc"><b>E-Mail:</b></label>
-					<input class="input-field" type="text" value="<?= $sel[0]['email']; ?>" 
-						   name="accemail" id="accemail">
-			</div>
 			
 			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Adresse:</b></label>
@@ -172,15 +161,27 @@
 			</div>
 			
 			<div class="input-container-account">
+				<label for="accemail" class="container-acc"><b>Postleitzahl:</b></label>
+					<input class="input-field" type="text" value="" 
+						   name="acczip" id="acczip">						   
+			</div>
+			
+			<div class="input-container-account">
+				<label for="accemail" class="container-acc"><b>Ort:</b></label>
+					<input class="input-field" type="text" value="" 
+						   name="acclocation" id="acclocation">						   
+			</div>
+			
+			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Telefon:</b></label>
 					<input class="input-field" type="text" value="" 
-						   name="acctelephone" id="acctelephone">
+						   name="accphone" id="accphone">
 			</div>
 			
 			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Geburtstag:</b></label>
 					<input class="input-field" type="text" value="" 
-						   name="accage" id="accage">
+						   name="accbday" id="accbday">
 			</div>
 			
 			<hr>
@@ -192,7 +193,7 @@
 						   name="accpswd" id="accpswd" required>
 			</div>
 
-			<input type="hidden" name="accupdate" id="accupdate" value="accupdate">
+			<input type="hidden" name="personalinsert" id="personalinsert" value="personalinsert">
 
 			<button type="submit" class="registerbtn">Bestätigen</button>
 		</p>

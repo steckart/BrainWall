@@ -19,9 +19,11 @@
 // $_POST =========================================================================================
 
 	$insert = false;
-	$update = false;
+	$profile = false;
 	$delete = false;
 	$back = false;
+	$personalinsert = false;
+	$personalupdate = false;
 
 	if ( !empty($_POST) ) {
 		if ( isset($_POST['accforminsert']) ) {
@@ -30,7 +32,6 @@
 			$db = new Db($dbms, $host, $port, $dbname, $uname, $pword);
 			$sel = $db->selectDb('*', 'WHERE username="' . $_COOKIE['Remember'] . '"');
 	
-			
 			$profileid = $sel[0]['userid'] ;
 			$height = htmlspecialchars($_POST['accheight']) ;
 			$apeindex = htmlspecialchars($_POST['accapeindex']);
@@ -39,22 +40,56 @@
 			$pswd  = $_POST['accpswd'];			
 		}
 		if ( isset($_POST['accformupdate']) ) {
-			$update = true;
+			$profile = true;
 			
 			$db = new Db($dbms, $host, $port, $dbname, $uname, $pword);
-			$sel = $db->selectDb('*', 'WHERE username="' . $_COOKIE['Remember'] . '"');
+			$sel = $db->selectProfileDb('*', 'WHERE username="' . $_COOKIE['Remember'] . '"');
 	
-			
 			$profileid = $sel[0]['userid'] ;
 			$height = htmlspecialchars($_POST['accheight']) ;
 			$apeindex = htmlspecialchars($_POST['accapeindex']);
 			$climbingscore = htmlspecialchars($_POST['accclimbingscore']);
 			$username = htmlspecialchars($_COOKIE['Remember']);
+			$email = htmlspecialchars($_POST['accemail']);
+			$pswd  = $_POST['accpswd'];			
+		}
+		if ( isset($_POST['personalinsert']) ) {
+			$personalinsert = true;
+			
+			$db = new Db($dbms, $host, $port, $dbname, $uname, $pword);
+			$sel = $db->selectProfileDb('*', 'WHERE username="' . $_COOKIE['Remember'] . '"');
+	
+			$personalid = $sel[0]['userid'] ;
+			$fname = htmlspecialchars($_POST['accfname']) ;
+			$lname = htmlspecialchars($_POST['acclname']) ;
+			$address = htmlspecialchars($_POST['accaddress']) ;
+			$zip = htmlspecialchars($_POST['acczip']) ;
+			$location = htmlspecialchars($_POST['acclocation']) ;
+			$phone = htmlspecialchars($_POST['accphone']) ;
+			$bday = htmlspecialchars($_POST['accbday']) ;
+			$username = htmlspecialchars($_COOKIE['Remember']);
+			$pswd  = $_POST['accpswd'];			
+		}
+		if ( isset($_POST['personalupdate']) ) {
+			$personalupdate = true;
+			
+			$db = new Db($dbms, $host, $port, $dbname, $uname, $pword);
+			$sel = $db->selectProfileDb('*', 'WHERE username="' . $_COOKIE['Remember'] . '"');
+	
+			$personalid = $sel[0]['userid'] ;
+			$fname = htmlspecialchars($_POST['accfname']) ;
+			$lname = htmlspecialchars($_POST['acclname']) ;
+			$address = htmlspecialchars($_POST['accaddress']) ;
+			$zip = htmlspecialchars($_POST['acczip']) ;
+			$location = htmlspecialchars($_POST['acclocation']) ;
+			$phone = htmlspecialchars($_POST['accphone']) ;
+			$bday = htmlspecialchars($_POST['accbday']) ;
+			$username = htmlspecialchars($_COOKIE['Remember']);
 			$pswd  = $_POST['accpswd'];			
 		}
 	}
 
-// INSERT =========================================================================================
+// PROFILE-INSERT =========================================================================================
 
 	if ( $insert ) {
 
@@ -65,7 +100,7 @@
 
 			$db->insertProfileDb($data);
 
-			header('Location: ' . $_SERVER['HTTP_REFERER']);
+			header('Location: profile.php?s=profile');
 			exit;
 			
 		} else {
@@ -78,17 +113,65 @@
 		}
 	}
 
-// UPDATE =========================================================================================
+// PROFILE-UPDATE =========================================================================================
 
-	if ( $update ) {
+	if ( $profile ) {
 
 		if ( password_verify($pswd, $sel[0]['password']) ) {
 			
 			$db->updateProfileDb('height', $height, $profileid);
 			$db->updateProfileDb('apeindex', $apeindex, $profileid);
 			$db->updateProfileDb('climbingscore', $climbingscore, $profileid);
+			$db->updateDb('email', $email, $username);
 
-			header('Location: ' . $_SERVER['HTTP_REFERER']);
+			header('Location: profile.php?s=profile');
+			exit;
+			
+		} else {
+			
+			$back = true;
+			
+			$_SESSION['form'] = 'accform';
+			$_SESSION['errormsg']['accpswd'] = 'Falsches Passwort!';
+			$_SESSION['formfield']['accpswd'] = 'accpswd';
+		}
+	}
+	
+// PERSONAL DATA-INSERT =========================================================================================
+
+	if ( $personalinsert ) {
+
+		if ( password_verify($pswd, $sel[0]['password']) ) {
+			
+			$data = [$personalid, $fname, $lname, $address, $zip, $location, $bday, $phone, $personalid];
+			$db->insertPersonalDb($data);
+
+			header('Location: profile.php?s=personaldata');
+			exit;
+			
+		} else {
+			
+			$back = true;
+			
+			$_SESSION['form'] = 'accform';
+			$_SESSION['errormsg']['accpswd'] = 'Falsches Passwort!';
+			$_SESSION['formfield']['accpswd'] = 'accpswd';
+		}
+	}	
+// PERSONAL DATA-UPDATE =========================================================================================
+
+	if ( $personalupdate ) {
+
+		if ( password_verify($pswd, $sel[0]['password']) ) {
+			
+			$db->updatePersonalDb('first_name', $fname, $personalid);
+			$db->updatePersonalDb('last_name', $lname, $personalid);
+			$db->updatePersonalDb('street', $address, $personalid);
+			$db->updatePersonalDb('zip', $zip, $personalid);
+			$db->updatePersonalDb('location', $location, $personalid);
+			$db->updatePersonalDb('phone', $phone, $personalid);
+
+			header('Location: profile.php?s=personaldata');
 			exit;
 			
 		} else {

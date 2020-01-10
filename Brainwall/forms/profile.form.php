@@ -2,7 +2,7 @@
 
 // VIEW OR EDIT DATA ===============================================================================================
 	
-	if( isset($_POST['accupdate']) ) {
+	if( isset($_POST['profupdate']) ) {
 		
 ?>	
 
@@ -11,6 +11,20 @@
 	<main class="main">
 	<form method="post" action="useracc.php">
 		<p>
+		
+			<div class="input-container-account">
+				<label for="accuname" class="container-acc"><b>Username:</b></label>					
+					<input class="input-field" type="text" value="<?= $sel[0]['username']; ?>" 
+						   name="accuname" id="accuname" disabled>
+			</div>
+
+			<div class="input-container-account">
+				<label for="accemail" class="container-acc"><b>E-Mail:</b></label>
+					<input class="input-field" type="text" value="<?= $sel[0]['email']; ?>" 
+						   name="accemail" id="accemail">
+			</div>
+			
+			<br>
 
 			<div class="input-container-account">
 				<label for="accfname" class="container-acc"><b>Körpergröße:</b></label>
@@ -53,6 +67,18 @@
 	<main class="main">
 	
 		<p>
+		
+			<div class="input-container-account">
+				<label for="accuname" class="container-acc"><b>Username:</b></label>					
+					<?= $sel[0]['username']; ?>
+			</div>
+
+			<div class="input-container-account">
+				<label for="accemail" class="container-acc"><b>E-Mail:</b></label>
+					<?= $sel[0]['email']; ?>
+			</div>
+			
+			<br>
 
 			<div class="input-container-account">
 				<label for="accfname" class="container-acc"><b>Körpergröße:</b></label>
@@ -82,6 +108,8 @@
 		<p>
 		
 			<h2> Vervollständige dein Profil:</h2>
+					
+			<br>
 		
 			<div class="input-container-account">
 				<label for="accfname" class="container-acc"><b>Körpergröße:</b></label>

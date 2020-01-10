@@ -37,7 +37,7 @@ session_start();
 
 		$db = new Db($dbms, $host, $port, $dbname, $uname, $pword);
 		$sel = $db->selectProfileDb('*', 'WHERE username="' . $_COOKIE['Remember'] . '"');
-	
+
 ?>	
 
 <!-- SECTION: PROFILE-GRID =========================================== -->
@@ -47,12 +47,24 @@ session_start();
 		<div id="username"><h2><?= $_COOKIE['Remember'] ?></h2></div>
 		
 <?php
-	if ( ( isset($sel[0]['profileid']) || isset($sel[0]['personalid']) ) && $_COOKIE['Remember'] == $sel[0]['username'] && !isset($_POST['accupdate']) ) {
+	if ( ( isset($sel[0]['profileid']) || isset($sel[0]['personalid']) ) && $_COOKIE['Remember'] == $sel[0]['username'] && ( !isset($_POST['profupdate']) || !isset($_POST['personalupdate']) ) ) {
 ?>
 		<form method="post" action="profile.php">
 			<div id="edit">
+<?php
+		if ( @$_GET['s'] == 'profile' ) {
+?>	
 				<button type="submit" class="btn">Profil Ändern</button><br>
-				<input type="hidden" name="accupdate" id="accupdate" value="accupdate">
+				<input type="hidden" name="profupdate" id="profupdate" value="profupdate">
+<?php
+		}
+		if ( @$_GET['s'] == 'personaldata' ) {
+?>
+				<button type="submit" class="btn">Profil Ändern</button><br>
+				<input type="hidden" name="personalupdate" id="personalupdate" value="personalupdate">
+<?php
+		}
+?>
 			</div>
 		</form>
 <?php
@@ -71,21 +83,24 @@ session_start();
 ?>
 		
 		<div id="profil-nav">
-		<form method="post" action="profile.php">
-			<input type="submit" name="profile" value="Profil"> |
-			<input type="submit" name="personaldata" value="Persönliche Daten"> | 
-			<a href="user_routes.php">Routen</a> | 
-			<a href="settings.php">Settings</a>
-		</form>
+		
+			<a href="profile.php?s=profile">Profil</a> | 
+			<a href="profile.php?s=personaldata">Persönliche Daten</a> |
+			<a href="profile.php?s=routes">Routen</a> | 
+			<a href="profile.php?s=settings">Settings</a>
+
 		</div>
 		
 		<div id="profil">
 <?php
-	if ( isset($_POST['profile']) || !isset($_POST['profile']) && !isset($_POST['personaldata']) ) {
-			require('forms/profile.form.php');
+	if ( @$_GET['s'] == 'profile' || isset($_POST['profupdate']) ) {
+		require('forms/profile.form.php');
 	}
-	elseif ( isset($_POST['personaldata']) ) {
+	elseif ( @$_GET['s'] == 'personaldata' || isset($_POST['personalupdate']) ) {
 		require('forms/personaldata.form.php');
+	}
+	else {
+		require('forms/profile.form.php');
 	}
 ?>
 		</div>
