@@ -66,7 +66,7 @@
 			$zip = htmlspecialchars($_POST['acczip']) ;
 			$location = htmlspecialchars($_POST['acclocation']) ;
 			$phone = htmlspecialchars($_POST['accphone']) ;
-			$bday = htmlspecialchars($_POST['accbday']) ;
+			$bday = date('Y-m-d', strtotime($_POST['accbday'])) ;
 			$username = htmlspecialchars($_COOKIE['Remember']);
 			$pswd  = $_POST['accpswd'];			
 		}
@@ -83,7 +83,7 @@
 			$zip = htmlspecialchars($_POST['acczip']) ;
 			$location = htmlspecialchars($_POST['acclocation']) ;
 			$phone = htmlspecialchars($_POST['accphone']) ;
-			$bday = htmlspecialchars($_POST['accbday']) ;
+			$bday = date('Y-m-d', strtotime($_POST['accbday'])) ;
 			$username = htmlspecialchars($_COOKIE['Remember']);
 			$pswd  = $_POST['accpswd'];			
 		}
@@ -170,6 +170,7 @@
 			$db->updatePersonalDb('zip', $zip, $personalid);
 			$db->updatePersonalDb('location', $location, $personalid);
 			$db->updatePersonalDb('phone', $phone, $personalid);
+			$db->updatePersonalDb('birth_date', $bday, $personalid);
 
 			header('Location: profile.php?s=personaldata');
 			exit;

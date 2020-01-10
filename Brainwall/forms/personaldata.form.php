@@ -50,7 +50,7 @@
 			
 			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Geburtstag:</b></label>
-					<input class="input-field" type="text" value="<?= $sel[0]['birth_date']; ?>" 
+					<input class="input-field" type="text" value="<?= date('d.m.Y', strtotime($sel[0]['birth_date'])); ?>" 
 						   name="accbday" id="accbday">
 			</div>
 			
@@ -108,7 +108,8 @@
 			
 			<div class="input-container-account">
 				<label for="accemail" class="container-acc"><b>Geburtstag:</b></label>
-					<?= $sel[0]['birth_date']; ?>
+					<?= date('d.m.Y', strtotime($sel[0]['birth_date'])); ?>
+					<!--  $sel[0]['birth_date'];  -->
 			</div>
 			
 			<!-- 
