@@ -31,7 +31,7 @@ if ($register) {
 	$db = new Db($dbms, $host, $port, $dbname, $uname, $pword);
 
 	$sel = $db->selectDb('email, username', 'WHERE email="' . $email. '" OR username="' . $username . '"');
-	header ('Location:register.php');
+	header ('Location: index.php');
 	setcookie("Remember", $username);
 	
 	if (empty($sel)) {

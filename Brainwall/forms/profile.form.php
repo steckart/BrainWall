@@ -107,7 +107,7 @@
 	<form method="post" action="useracc.php">
 		<p>
 		
-			<h2> Vervollständige dein Profil:</h2>
+			<h2 class="marginleft1rem"> Vervollständige dein Profil:</h2>
 					
 			<br>
 		
@@ -129,11 +129,12 @@
 						   name="accclimbingscore" id="accclimbingscore">
 			</div>
 			
+			<br>
 			<hr>
 			<br>
 
 			<div class="input-container-account">
-				<label for="accpswd" class="container-acc"><b>Bestätige mit deinem Passwort:</b></label><br>
+				<label for="accpswd" class="container-acc"><b>Bestätige Einträge mit deinem Passwort:</b></label><br>
 					<input class="marginleft1rem" type="password" placeholder="Passwort" 
 						   name="accpswd" id="accpswd" required>
 			</div>
